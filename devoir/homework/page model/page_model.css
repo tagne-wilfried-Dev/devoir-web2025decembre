@@ -1,0 +1,125 @@
+
+.main-header{
+    display: flex;
+    justify-content: flex-start;
+    color: #f2662a;
+    background-color: antiquewhite;
+}
+ nav {
+ background-color:#f2662a;
+ height:35px;
+ }
+ nav li{
+ float:left;
+ width:140px;
+ height:35px;
+ background-color:black;
+ text-align: center;
+ border-left: 1px white solid;
+ border-right: 1px white solid;
+ line-height:35px;
+ list-style:none;
+ }
+ nav li a{
+ color:white;
+ text-decoration:none;
+ display:block;
+ }
+ nav li a:hover{
+ background-color:#f0462b;
+ color:#ebebea;
+ }
+
+ /* section */
+ section {
+    width: 600px;
+    float: left;
+ }
+ section  p, h1, h2 {  
+    margin-left:20px;
+    margin-right: 20px;
+ }
+ section  h2 {
+    margin-top:15px;
+ }
+
+ footer{
+    clear: both;
+    width: 100%;
+    margin: auto;
+    font-size: 10px;
+    background: #f2f2f2 url(file:../images/footer_background.jpg)  no-repeat  left;
+    height: 118px;
+    padding-top: 10px;
+    border-top:#e2e2e2 solid 2px;
+    border-bottom:#e2e2e2 solid 2px;
+    text-align: center;
+
+ }
+
+ /* article */
+ article header{
+    background:none;
+    height:auto;
+    border-bottom:none;
+ 
+}
+ article header h2{
+    color:black;
+    margin:0;
+ }
+ article header p{
+    color: gray; 
+    margin: 0;
+ }
+ article footer{
+    background:none;
+    height:auto;
+    border:none;
+ }
+ article footer p{
+    font-size:10px;
+ }
+
+ /* aside */
+ #main_aside{
+    margin-top:15px;
+    width: clamp(250px, 25%, 300px);
+    float: left;
+    width: 300px;
+    background-color: #378059;
+    padding:7px;
+    color:white;
+    font-size: 0.8rem;
+ }
+
+ #article_aside{
+    float: left;
+    width: 12em; /* 1 em est la hauteur de caractère de la police utilisée, unité relative */
+    background: #F9A890;
+    padding: 10px;
+    margin: 0 10px;
+ }
+ #article_aside h3{
+    color:#378059;
+    margin:5px 0 5px 0;
+ }
+ #article_aside p{
+    margin: 0;
+ }
+
+ /*figure */
+ figure {
+ float: right;
+ border: 1px solid gray;
+ padding: 0.25em;
+ margin: -5px 1.5em 1.5em 0;
+ }
+ figcaption{
+    text-align:center;
+    font: italic 0.9em Georgia, «Times New Roman», Times, serif;
+ }
+
+ .main-header,aside,article,section,footer{
+    border: 1.5px dotted #f0462b;
+ }

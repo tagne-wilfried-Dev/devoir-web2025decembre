@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devoir</title>
+</head>
+<body>
+    <header class="main-head">       
+        <div class="title">
+            <figure>
+                <img src="html.png" alt="logo-html">
+            </figure>
+            <div class="title-text">
+                <h1>html5</h1>
+                <h3>page modele exercice</h3>
+            </div>
+        </div>
+    </header> 
+    <nav>
+        <ul>
+            <li class="deroulant">
+                <a href="#">ACCUEIL</a>
+                <ul class="sous">                    
+                    <li><a lien="calc" href="homework/mini calco/calco.html" target="contenu">Mini calco</a></li>
+                    <li><a lien="pgcd" href="homework/pgcd/index.html" target="contenu">PGCD</a></li>
+                    <li><a lien="equat" href="homework/equation/index.html" target="contenu">Equation 2<sup>o</sup></a></li>
+                </ul>
+            </li>
+            <li class="deroulant">
+                <a href="#">DIAPORAMA</a>
+                <ul class="sous">
+                    <li><a lien="dyna" href="homework/tableau/index.html" target="contenu">Tab Dynamique</a></li>
+                    <li><a lien="form" href="homework/formulaire/form.html" target="contenu">Formulaire</a></li>
+                    <li><a lien="album" href="homework/album/index_gallery.html" target="contenu">Album</a></li>
+                </ul>
+            </li>
+            <li class="deroulant">
+                <a href="#">A PROPOS</a>
+                <ul class="sous">
+                    <li><a lien="model" href="homework/page model/page_model.html" target="contenu">Page Model</a></li>
+                    <li><a lien="time_table" href="homework/emploi temps/emploi_de _temps.html" target="contenu">Time table</a></li>
+                    <li><a lien="calcula" href="homework/projet1/index.html" target="contenu">Calculatrice</a></li>
+                </ul>
+            </li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h2 class="h2a">TABLEAU DYNAMIQUE</h2>
+        <p class="pa"> commodi similique consequuntur harum, at hic delectus est quibusdam corporis laboriosam. Optio expedita velit temporibus accusamus inventore repellat cum?
+        Commodrecusandae eius. Voluptatem, fugiat ullam.
+        Rerum,ri facilis non tenetur consequatur.
+        Non, nexplicabo quia modi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate alias, quasi, eos totam veritatis consequuntur maiores eaque magnam quod odio eligendi. Saepe repellat, minus vitae sunt nihil architecto alias a.
+        Cupiditate repellendus autem impedit. Vitae tempora nisi odit quo veniam facere? At earum error esse totam maiores, nostrum autem. Ratione repellat laboriosam molestias officiis quam in sint magni illo velit.
+        Recusaisi sunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aut autem sapiente asperiores totam magni suscipit quibusdam fugiat dolor facere, commodi vitae aliquid molestias minima sequi iusto tempore quae voluptates.</p>
+    </aside>
+    <iframe src="homework/tableau/index.html" frameborder="0" name="contenu"></iframe> -->
+
+    </main>
+    <footer class="gen-footer">
+        Copyright 2012 AFCI NEWSOFT
+        acceptez notre contrat utilisateur et notre charte <br> sur le respect de la vie privee 
+    </footer> 
+    <script>
+        let a = document.querySelectorAll('a');
+        let h = document.querySelector('.h2a');
+        let p = document.querySelector('.pa');
+
+        let formh2 = "FORMULAIRE";
+        let dynah2 = "TABLEAU DYNAMIQUE";
+        let equath2 = "EQUATION 2ND DEGRE";
+        let calch2 = "MINI CALCULATRICE";
+        let calculah2 = "CALCULATRICE";
+        let time_table2 = "EMPLOI DE TEMPS";
+        let modelh2 = "PAGE MODEL";
+        let albumh2 = "ALBUM DE CHATS MIGNONS";
+        let pgcdh2 = "CALCUL PGCD";
+
+        // let formp ="formulaire d'enregistrement pour une plateforme en ligne "
+        a.forEach(lien => {
+            lien.addEventListener('click',function(){
+                console.log(this.getAttribute('lien'));
+                switch (this.getAttribute('lien')){
+                    case('form'):h.textContent = formh2;
+                        break;
+                    case('dyna'):h.textContent = dynah2;
+                        break;
+                    case('equat'):h.textContent = equath2;
+                        break;
+                    case('calcula'):h.textContent = calculah2;
+                        break;
+                    case('calc'):h.textContent = calch2;
+                        break;
+                    case('time_table'):h.textContent = time_table2;
+                        break;
+                    case('album'):h.textContent = albumh2;
+                        break;
+                    case('pgcd'):h.textContent = pgcdh2;
+                        break;
+                    case('model'):h.textContent = modelh2;
+                        break;
+                }
+                
+            });
+        });
+    </script>
+</body>
+</html>

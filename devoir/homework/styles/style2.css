@@ -1,0 +1,39 @@
+
+/* styles de l'album photo*/
+html{
+    background-color: #095e92;
+}
+.capitalise{
+    text-transform: capitalize;
+}
+.center{
+    text-align: center;
+}
+img{
+    width: 250px;
+    border-radius: 55px;
+    margin: 25px;
+    box-shadow: 2px 0 40px #099274;  
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 0 40px #099274 inset;
+}
+.absolute{
+    position: absolute;
+    left: 40%;
+    width: 350px;
+}
+
+@media (max-width: 820px) {
+    .absolute{
+        display: none;
+    }
+    img{
+    width: 150px;
+    border-radius: 45px;
+    margin: 15px;
+    box-shadow: 2px 0 10px #099274;
+}
+}

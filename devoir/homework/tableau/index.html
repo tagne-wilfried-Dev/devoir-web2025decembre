@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>tableau dynamique</title>
+</head>
+<body>
+    <h1>generez un tableau de votre choix</h1>
+    <form action="" name="form">
+        <label for="rows">Lignes: </label>
+        <input type="number"-+ name="rows" id="ln" placeholder="Rows">
+        <label for="cols">colonnes:</label>
+        <input type="number" name="cols" id="col" placeholder="Cols" >
+        <button type="button" onclick="generer()">generer</button>
+    </form>
+    <table id="table"></table>
+    <div class="error"> </div>
+    <div class="div"></div>
+</body>
+</html>

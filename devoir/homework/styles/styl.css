@@ -1,0 +1,13 @@
+body{
+    background-color: #888;
+}
+img{
+    width: 300px;
+    display: block;
+    margin-bottom: 1em;
+}
+div{
+    width: 100vw;
+    columns:3 300px;
+    column-gap: 1em;
+}

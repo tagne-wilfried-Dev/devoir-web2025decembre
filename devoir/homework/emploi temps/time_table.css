@@ -1,0 +1,89 @@
+
+/*style de l'emploi de temps*/
+*{
+    padding: 0;
+    margin: 1px;
+    box-sizing: border-box;
+}
+body{
+    min-width: 722px;
+}
+.bold{
+    font-weight: bold;
+}
+.upper{
+    text-transform: uppercase;
+}
+.capitalise{
+    text-transform: capitalize;
+}
+.french{
+    font-weight: bold;
+}
+.english{
+    font-weight: 400;
+}
+.haut_de_page{
+    display: flex;
+    justify-content: space-between;
+}
+.specific_iut,.general_uds{
+    border: 2px solid black;
+    word-spacing: 0.5;
+    text-align: center;
+    padding: 10px;
+    min-width: 305px;
+}
+.specific_iut{
+    margin-right: 1vw;
+}
+.general_uds{
+    margin-left: 1vw;
+}
+.logo_uds{
+    margin: 30px 0 0 0;
+    background-image: url("UDS_logo.png");
+    background-repeat: no-repeat;
+    background-position: -25px -10px;
+    width: 130px;
+    height: 135px;
+}
+/* .small_block{
+    line-height: 0.5;
+}
+.small_block_p{
+    line-height: 0.2;
+} */
+.center{
+    text-align: center;
+}
+/* .small_block{
+    line-height: 0.5;
+} */
+ .specific_iut,.general_uds{
+    width: 45%;
+ }
+h2{
+    font-size: clamp(1em,calc(0.5em + 1vw),20px);
+    margin: calc(0.3em + 0.3vw);
+}
+.inline{
+    padding-right: 20px;
+}
+.present,.enter{
+    display: flex;
+}
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+}
+.gris{
+    background-color: rgba(165, 155, 108, 0.5);
+}

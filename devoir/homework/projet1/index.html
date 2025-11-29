@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="center upper">calculatrice</h1>
+    <main>
+        <input type="text" name="resultat" id="result">
+        <table>
+            <tr>
+                <td data-value="9" class="center ft gris">9</td>
+                <td data-value="8" class="center ft gris">8</td>
+                <td data-value="7" class="center ft gris">7</td>
+                <td data-value="*" class="center ft ">x</td>
+            </tr>
+            <tr>
+                <td data-value="6" class="center ft gris">6</td>
+                <td data-value="5" class="center ft gris">5</td>
+                <td data-value="4" class="center ft gris">4</td>
+                <td data-value="/" class="center ft ">/</td>
+            </tr>
+            <tr>
+                <td data-value="3" class="center ft gris">3</td>
+                <td data-value="2" class="center ft gris">2</td>
+                <td data-value="1" class="center ft gris">1</td>
+                <td data-value="+" class="center ft ">+</td>
+            </tr>
+            <tr>
+                <td data-value="0" class="center ft gris">0</td>
+                <td data-value="." class="center ft ">.</td>
+                <td data-value="%" class="center ft ">%</td>
+                <td data-value="-" class="center ft ">-</td>
+            </tr>
+        </table>
+        <button name="answer" type="button" id="end" onclick="egal()">=</button>
+        <button name="answer" type="button" id="reset" onclick="location.reload()">Reset</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
